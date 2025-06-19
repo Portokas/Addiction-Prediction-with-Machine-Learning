@@ -1,6 +1,6 @@
 # Addiction-Prediction-with-Machine-Learning
 
-From Legal to Illicit Substances: Unveiling Personality Influences with Machine Learning
+Paper Title: From Legal to Illicit Substances: Unveiling Personality Influences with Machine Learning
 
 This project investigates the role of personality and demographic traits in predicting the transition from legal to illicit drug use, with a primary focus on nicotine as the “gateway” substance. Using machine learning techniques and psychological profiling, we aim to enhance addiction risk prediction models and provide more effective tools for behavioral analysis and tailored rehabilitation.
 
@@ -13,8 +13,8 @@ Drug addiction is a multifaceted societal issue often rooted in psychological an
 	•	Investigates demographic influences, with emphasis on education level
 
 📊 Dataset
-	•	Source: UCI Machine Learning Repository (Drug Consumption - Quantified)
-	•	Size: 1,885 participants
+ Source: UCI Machine Learning Repository (Drug Consumption - Quantified)
+ Size: 1,885 participants
 	•	Features:
 	•	Personality traits (NEO-FFI-R): Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness
 	•	Impulsiveness & Sensation Seeking (SS)
