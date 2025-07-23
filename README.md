@@ -1,21 +1,93 @@
-# Addiction-Prediction-with-Machine-Learning
 
-Paper Title: From Legal to Illicit Substances: Unveiling Personality Influences with Machine Learning
+# Personality-Based Drug Use Prediction with Machine Learning
 
-This project explores how personality and demographic traits influence the transition from legal to illicit drug use, focusing primarily on nicotine as a gateway substance. By leveraging supervised machine learning algorithms and psychological profiling based on the Five Factor Model (FFM), the study aims to predict addiction risk and assist in faster, more personalized rehabilitation approaches.
+This project explores how personality traits (NEO-FFI-R), in combination with demographic features, can be used to predict the transition from legal substances (like nicotine) to illicit drug use using machine learning techniques. The study uses the publicly available "Drug Consumption" dataset and focuses on supervised learning classification, correlation analysis, and ROC evaluation.
 
-The dataset used is the “Drug Consumption (Quantified)” dataset from the UCI Machine Learning Repository, which contains 1,885 participants with no missing values. Each participant is described by 12 features including personality traits (neuroticism, extraversion, openness, agreeableness, conscientiousness), impulsiveness, sensation seeking, age, gender, education level, country of residence, and ethnicity. In addition, participants reported their usage of 18 substances, both legal and illicit.
+## 🧠 Dataset
 
-The methodology consists of two main experiments. In the first, we applied and compared the performance of two supervised machine learning algorithms, AdaBoost and Support Vector Machine (SVM), to predict whether nicotine users are likely to transition to illicit drug use. Data were preprocessed and split into training and testing subsets, and models were evaluated using accuracy, precision, recall, F1-score, and area under the ROC curve (AUC). The results showed that both classifiers performed well, with AdaBoost slightly outperforming SVM. Specifically, AdaBoost achieved an accuracy of 74% and an AUC of 0.84, while SVM reached 75% accuracy and an AUC of 0.83.
+- **Source**: UCI Machine Learning Repository  
+- **Link**: https://archive.ics.uci.edu/dataset/373/drug+consumption+quantified
+- **Format**: CSV (`drug_consumption.data`)
+- **Size**: 1885 participants
+- **Features**:
+  - 5 personality traits (NEO-FFI-R): Neuroticism, Extraversion, Openness, Agreeableness, Conscientiousness  
+  - Impulsivity, Sensation Seeking  
+  - Demographics: Age, Gender, Education, Country, Ethnicity  
+  - Use of 18 substances (legal + illegal)
 
-In the second experiment, the dataset was divided into nicotine users and non-users in order to examine how personality traits correlate with illicit drug use based on a person’s education level. Among nicotine users, 46.90% had transitioned to illicit drug use, whereas 15.65% of non-nicotine users had used illegal substances directly. Correlation analysis revealed that for nicotine users, openness to experience (Oscore) is the strongest personality trait linked to illicit drug use, especially when factoring in education. For non-nicotine users, impulsiveness and sensation seeking (SS) were more dominant predictors.
+## 📂 Project Structure
 
-The findings suggest that psychologists and professionals can assess addiction risk by focusing on a single domain of the NEO-FFI-R personality model, specifically the one most correlated with the individual’s legal drug use behavior. By combining this domain with the person’s education level and history of nicotine use, practitioners can predict the likelihood of transitioning to illicit drug use with fewer resources and greater speed.
+```
+project/
+│
+├── data/
+│   └── drug_consumption.data
+├── src/
+│   ├── preprocess.py
+│   ├── experiment1_classification.py
+│   ├── experiment2_correlations.py
+│   └── utils.py
+├── figures/
+│   └── roc_curve.png
+├── results/
+│   └── confusion_matrices/
+│       ├── adaboost.png
+│       └── svm.png
+├── requirements.txt
+└── README.md
+```
 
-This study contributes to the existing literature by proposing a simplified, targeted method for addiction risk analysis using machine learning. Future work may include extending this methodology to other legal substances beyond nicotine and exploring additional correlations between personality traits and social factors in substance use behavior.
+## 📦 Installation
 
-## License
+1. Clone the repository:
 
-The source code in this repository is licensed under the MIT License (see the LICENSE file for details).
+```bash
+git clone https://github.com/yourusername/drug-use-ml.git
+cd drug-use-ml
+```
 
-⚠️ Note: The accompanying research paper is **not** covered by this license. Please refer to the publisher's terms for usage or citation information.
+2. (Optional) Create a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## ⚙️ How to Reproduce
+
+1. Download the dataset from the UCI link above.
+2. Place `drug_consumption.data` into the `/data` folder.
+
+Then run:
+
+```bash
+python src/preprocess.py
+python src/experiment1_classification.py
+python src/experiment2_correlations.py
+```
+
+## 📊 Output
+
+- Accuracy, Precision, Recall, F1-score
+- ROC curve comparison between AdaBoost & SVM
+- Correlation heatmaps for education vs drug use
+- Confusion matrices
+
+## 📚 Citation
+
+> A. Portokallidis, “From Legal to Illicit Substances: Personality-Based Drug Use Prediction with Machine Learning”, 2025.
+
+## 🙋 Author
+
+- Athanasios Portokallidis  
+- th20109@edu.hmu.gr
+
+## 📄 License
+
+This project is licensed under the MIT License.
