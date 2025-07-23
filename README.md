@@ -79,14 +79,18 @@ python src/experiment2_correlations.py
 - Correlation heatmaps for education vs drug use
 - Confusion matrices
 
+## 🔚 Conclusion
+
+This study demonstrates that personality traits, especially when measured through validated psychometric instruments like the NEO-FFI-R, can serve as meaningful predictors for identifying the likelihood of transitioning from legal to illicit drug use. By applying machine learning techniques such as AdaBoost and SVM, we observed strong classification performance, particularly among nicotine users. These findings highlight the potential for using personality-based models to support early prevention strategies and personalized interventions in substance use research.
+
 ## 📚 Citation
 
-> A. Portokallidis, “From Legal to Illicit Substances: Personality-Based Drug Use Prediction with Machine Learning”, 2025.
+> A. Portokallidis, I. Manolis, K. Karampidis, M. Tampouratzis, and M. Kara, "From Legal to Illicit Substances: Unveiling Personality Influences with Machine Learning," Department of Electrical and Computer Engineering, Hellenic Mediterranean University, Heraklion, Greece, and Interdisciplinary Research Center for Intelligent Secure Systems, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.
 
 ## 🙋 Author
 
 - Athanasios Portokallidis  
-- th20109@edu.hmu.gr
+- portokallidesthanases@gmail.com
 
 ## 📄 License
 
