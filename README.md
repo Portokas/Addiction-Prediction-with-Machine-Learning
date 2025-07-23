@@ -42,8 +42,8 @@ project/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/drug-use-ml.git
-cd drug-use-ml
+git clone https://github.com/Portokas/Addiction-Prediction-with-Machine-Learning.git
+cd Addiction-Prediction-with-Machine-Learning
 ```
 
 2. (Optional) Create a virtual environment:
