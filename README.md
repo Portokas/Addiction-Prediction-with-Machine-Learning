@@ -85,7 +85,7 @@ This study demonstrates that personality traits, especially when measured throug
 
 ## 📚 Citation
 
-> A. Portokallidis, I. Manolis, K. Karampidis, M. Tampouratzis, and M. Kara, "From Legal to Illicit Substances: Unveiling Personality Influences with Machine Learning," Department of Electrical and Computer Engineering, Hellenic Mediterranean University, Heraklion, Greece, and Interdisciplinary Research Center for Intelligent Secure Systems, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.
+A. Portokallidis, I. Manolis, K. Karampidis, M. Tampouratzis, and M. Kara, "From Legal to Illicit Substances: Unveiling Personality Influences with Machine Learning," Department of Electrical and Computer Engineering, Hellenic Mediterranean University, Heraklion, Greece, and Interdisciplinary Research Center for Intelligent Secure Systems, King Fahd University of Petroleum and Minerals, Dhahran, Saudi Arabia.
 
 ## 🙋 Author
 
